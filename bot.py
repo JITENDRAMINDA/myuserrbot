@@ -1,7 +1,7 @@
 from pyrogram import Client, Filters
 
 
-app = Client('890398475:AAFKe-e5H2owXvzoB-AlIpy3ELE-0f7OoNs',605563,"7f2c2d12880400b88764b9b304e14e0b")
+app = Client('666639160:AAEtopjBMU5r_i_UROx8PTWSSOtIrU6V7W8',605563,"7f2c2d12880400b88764b9b304e14e0b")
 
 
 
