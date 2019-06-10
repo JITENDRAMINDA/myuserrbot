@@ -5,8 +5,8 @@ app = Client('666639160:AAEtopjBMU5r_i_UROx8PTWSSOtIrU6V7W8',605563,"7f2c2d12880
 
 
 
-u = '-1001336546427'
-s = '-1001378725482'
+u = '-1001394666637'
+s = '-1001274887387'
 
 
 @app.on_message(Filters.chat(int(s)) & Filters.text & ~ Filters.edited)
