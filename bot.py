@@ -9,7 +9,7 @@ u = '-1001394666637'
 s = '-1001274887387'
 
 
-@@app.on_message(Filters.chat(int(s)) & Filters.text & ~ Filters.edited)
+@app.on_message(Filters.chat(int(s)) & Filters.text & ~ Filters.edited)
 
 def forawrd(client, message):
 
