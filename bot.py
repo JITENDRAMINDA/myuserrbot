@@ -9,4 +9,6 @@ def forawrd(client, message):
  client.delete_messages(message.chat.id, range(int(message.text.split(' ')[1]), int(message.text.split(' ')[2]))
 
   
+
+
 app.run()
