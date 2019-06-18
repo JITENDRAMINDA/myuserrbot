@@ -6,7 +6,7 @@ app = Client("663574960:AAGWfrBnjGYGSczuGHGLG60RVLMp6ebWteM",665563,"7f2c2d12880
           
 @app.on_message(Filters.command("delete"))
 def main(client, message):
-   client.delete_messages(message.chat.id, range(int(message.text.split(' ')[1]), int(message.text.split(' ')[2]))
+   client.delete_messages(message.chat.id, range(int(message.text.split(' ')[1]), int(message.text.split(' ')[2])))
 
   
 
