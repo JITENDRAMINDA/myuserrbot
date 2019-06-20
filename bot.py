@@ -9,9 +9,7 @@ def main(client, message):
   file = open("sure.txt" , "r")
   lines = file.readlines()
   file.close()
-  message.reply((p + 
-   "☣️ ["+ message.reply_to_message.text+ "]" + "(" + message.text.split(' ')[1] + ")"
-    )for p in lines)
+  message.reply((p + "☣️ ["+ message.reply_to_message.text+ "]" + "(" + message.text.split(' ')[1] + ")")for p in lines)
   
 
 
