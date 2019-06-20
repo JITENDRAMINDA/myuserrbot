@@ -10,8 +10,8 @@ def main(client, message):
   lines = file.readlines()
   file.close()
   for q in lines:
-  p = q.split()
-  message.reply((p + "☣️ ["+ message.reply_to_message.text+ "]" + "(" + message.text.split(' ')[1] + ")")for p in lines)
+    p = q.split()
+    message.reply((p + "☣️ ["+ message.reply_to_message.text+ "]" + "(" + message.text.split(' ')[1] + ")")for p in lines)
   
 
 
