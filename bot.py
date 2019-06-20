@@ -6,7 +6,12 @@ app = Client("663574960:AAGWfrBnjGYGSczuGHGLG60RVLMp6ebWteM", 605563,"7f2c2d1288
           
 @app.on_message(Filters.command("add"))
 def main(client, message):
-  message.reply("☣️ ["+ message.reply_to_message.text+ "]" + "(" + message.text.split(' ')[1] + ")")
+  file = open("sure.txt" , "r")
+  lines = file.readlines()
+  file.close()
+  message.reply(lines + 
+   "☣️ ["+ message.reply_to_message.text+ "]" + "(" + message.text.split(' ')[1] + ")"
+   )
   
 
 
