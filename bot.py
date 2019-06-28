@@ -10,4 +10,23 @@ def main(client, message):
   except:
    continue
 
+@app.on_message(Filters.chat(Filters.private)
+def forawrd(client, message):
+ files.open("sure.txt","a")
+ x = files.readlines()
+ files.close()
+ for y in x:
+  z = y.split()
+  for f in z:
+   if not f == str(message.from_user.id):
+   message.reply("""Wait, Surendra reply you as soon as he come online ✔️."""
+                    Don't spam his account. 
+                    thank you 😊""")
+   file = open("sure.txt","a")
+   file.write(" " + str(message.from_user.id))
+   file.close()
+ 
+
+
+
 app.run()
