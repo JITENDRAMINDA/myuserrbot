@@ -34,10 +34,12 @@ def forawrd(client, message):
   for f in z:
    if f == str(message.chat.id):
      f = True
+     print("true")
  if not f:
+    print(f)
     message.reply("Wait, Surendra reply you as soon as he come online ✔️. Don't spam his account . thank you 😊")
     file = open("sure.txt","a")
     file.write(" " + str(message.chat.id))
     file.close()
-   
+ print(f)  
 app.run()
