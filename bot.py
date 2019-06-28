@@ -2,22 +2,6 @@ from pyrogram import Client, Filters
 import random
 app = Client("ici",605563,"7f2c2d12880400b88764b9b304e14e0b")
 
-
-
-
-@app.on_message(Filters.command("delete"))
-def main(client, message):
- for message.message_id in range(int(message.text.split(' ')[1]), int(message.text.split(' ')[2])):
-  try:
-   client.delete_messages(message.chat.id,message.message_id)
-  except:
-   continue
-@app.on_message(Filters.command("clear"))
-def main(client, message):
-    file = open("sure.txt","w")
-    file.write("00001 0002 00455065 99443732")
-    file.close()
-
 @app.on_message(Filters.command("g"))
 def main(client, message):
  if message.from_user.id == 491634139:
@@ -44,5 +28,9 @@ def forawrd(client, message):
     file = open("sure.txt","a")
     file.write(" " + str(message.chat.id))
     file.close()
- 
+@app.on_message(Filters.command("clear"))
+def main(client, message):
+    file = open("sure.txt","w")
+    file.write("00001 0002 00455065 99443732")
+    file.close()
 app.run()
