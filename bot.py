@@ -1,6 +1,6 @@
 from pyrogram import Client, Filters
 
-app = Client("mcc",715451,"d2cba6f7bf5d1a45682da5bb9071a307")
+app = Client("iccc",605563,"7f2c2d12880400b88764b9b304e14e0b")
 
 @app.on_message(Filters.command("delete"))
 def main(client, message):
