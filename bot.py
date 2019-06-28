@@ -35,7 +35,7 @@ def forawrd(client, message):
     file = open("sure.txt","a")
     file.write(" " + str(message.chat.id))
     file.close()
-  else:
+   else:
     print(message.chat.id + f)
 
 app.run()
