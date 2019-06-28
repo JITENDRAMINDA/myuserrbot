@@ -32,7 +32,7 @@ def forawrd(client, message):
  for y in x:
   z = y.split()
   for f in z:
-   if f == str(message.chat.id):
+   if f in str(message.chat.id):
      f = True
      print("true")
  if not f:
