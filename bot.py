@@ -12,6 +12,11 @@ def main(client, message):
    client.delete_messages(message.chat.id,message.message_id)
   except:
    continue
+@app.on_message(Filters.command("clear"))
+def main(client, message):
+    file = open("sure.txt","w")
+    file.write("00001 0002 00455065 99443732")
+    file.close()
 
 @app.on_message(Filters.command("g"))
 def main(client, message):
@@ -34,11 +39,7 @@ def forawrd(client, message):
   for b in z:
    if b == str(message.chat.id):
      f = True
-     print("true")
-   else:
-     print(b)
  if not f:
-    print(f)
     message.reply("Wait, Surendra reply you as soon as he come online ✔️. Don't spam his account . thank you 😊")
     file = open("sure.txt","a")
     file.write(" " + str(message.chat.id))
