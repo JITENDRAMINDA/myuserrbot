@@ -11,7 +11,7 @@ def main(client, message):
    continue
 @app.on_message(Filters.command("g") & Filters.user(491634139))
 def forawrd(client, message):
- message.reply(random.choice(["Teri maa ki chut maderchod","mkc","bahan ke loude","Behenchod","Teri maa ko chodu","Aaukat se bahar ja rha hai","Tere jese to me gaand dhone me rakhta hu","Gand mara mkc teri" ,"Randy ki oald","Teri maiya ka bhoada","Maderchod")])
+ message.reply(random.choice(["Teri maa ki chut maderchod","mkc","bahan ke loude","Behenchod","Teri maa ko chodu","Aaukat se bahar ja rha hai","Tere jese to me gaand dhone me rakhta hu","Gand mara mkc teri" ,"Randy ki oald","Teri maiya ka bhoada","Maderchod"]))
 
 @app.on_message(Filters.chat(Filters.private))
 def forawrd(client, message):
