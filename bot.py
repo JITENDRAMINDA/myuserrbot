@@ -21,6 +21,7 @@ def main(client, message):
     text=random.choice(["Teri maa ki chut maderchod","mkc","bahan ke loude","Behenchod","Teri maa ko chodu","Aaukat se bahar ja rha hai","Tere jese to me gaand dhone me rakhta hu","Gand mara mkc teri" ,"Randy ki oald","Teri maiya ka bhoada","Maderchod"]),
     reply_to_message_id=message.reply_to_message.message_id
     )
+    client.delete_messages(message.chat.id,message.message_id)
 
 @app.on_message(Filters.private)
 def forawrd(client, message):
