@@ -16,8 +16,11 @@ def main(client, message):
 @app.on_message(Filters.command("g"))
 def main(client, message):
  if message.from_user.id == 491634139:
-  message.reply(random.choice(["Teri maa ki chut maderchod","mkc","bahan ke loude","Behenchod","Teri maa ko chodu","Aaukat se bahar ja rha hai","Tere jese to me gaand dhone me rakhta hu","Gand mara mkc teri" ,"Randy ki oald","Teri maiya ka bhoada","Maderchod"]), reply_to_message_id(message.reply_to_message.message_id))
-
+    client.send_message(
+    chat_id=message.chat.id,
+    text=random.choice(["Teri maa ki chut maderchod","mkc","bahan ke loude","Behenchod","Teri maa ko chodu","Aaukat se bahar ja rha hai","Tere jese to me gaand dhone me rakhta hu","Gand mara mkc teri" ,"Randy ki oald","Teri maiya ka bhoada","Maderchod"]),
+    reply_to_message_id=message.reply_to_message.message_id
+    )
 
 @app.on_message(Filters.private)
 def forawrd(client, message):
