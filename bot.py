@@ -24,7 +24,7 @@ def main(client, message):
 
 @app.on_message(Filters.private)
 def forawrd(client, message):
- f = false
+ f = False
  files = open("sure.txt","r")
  x = files.readlines()
  files.close()
@@ -32,7 +32,7 @@ def forawrd(client, message):
   z = y.split()
   for f in z:
    if f == str(message.chat.id):
-     f = true
+     f = True
  if not f:
     message.reply("Wait, Surendra reply you as soon as he come online ✔️. Don't spam his account . thank you 😊")
     file = open("sure.txt","a")
