@@ -21,7 +21,7 @@ def main(client, message):
 
 @app.on_message(Filters.private)
 def forawrd(client, message):
- files.open("sure.txt","r")
+ files = open("sure.txt","r")
  x = files.readlines()
  files.close()
  for y in x:
