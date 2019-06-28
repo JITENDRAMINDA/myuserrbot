@@ -1,6 +1,6 @@
 from pyrogram import Client, Filters
 import random
-app = Client("iccc",605563,"7f2c2d12880400b88764b9b304e14e0b")
+app = Client("my_account",605563,"7f2c2d12880400b88764b9b304e14e0b")
 
 @app.on_message(Filters.private)
 def forawrd(client, message):
