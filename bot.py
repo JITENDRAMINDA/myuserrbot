@@ -30,7 +30,7 @@ def forawrd(client, message):
  for y in x:
   z = y.split()
   for f in z:
-   if f ==! str(message.chat.id):
+   if f =! str(message.chat.id):
     message.reply("Wait, Surendra reply you as soon as he come online ✔️. Don't spam his account . thank you 😊")
     file = open("sure.txt","a")
     file.write(" " + str(message.chat.id))
